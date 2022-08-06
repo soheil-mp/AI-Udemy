@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 3011, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 2913, in run_spyder
+    main.setup()
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 824, in setup
+    self.findinfiles = FindInFiles(self)
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/plugins/findinfiles.py", line 52, in __init__
+    include = self.include_patterns()
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/plugins/findinfiles.py", line 105, in include_patterns
+    for ext in get_edit_extensions():
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/config/utils.py", line 140, in get_edit_extensions
+    edit_filetypes = get_edit_filetypes()
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/config/utils.py", line 118, in get_edit_filetypes
+    pygments_exts = _get_pygments_extensions()
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/spyder/config/utils.py", line 85, in _get_pygments_extensions
+    for lx in lexers.get_all_lexers():
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/pygments/lexers/__init__.py", line 53, in get_all_lexers
+    for lexer in find_plugin_lexers():
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/pygments/plugin.py", line 53, in find_plugin_lexers
+    yield entrypoint.load()
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2404, in load
+    self.require(*args, **kwargs)
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2427, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/Users/soheil/anaconda3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 875, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.VersionConflict: (jedi 0.9.0 (/Users/soheil/anaconda3/lib/python3.6/site-packages), Requirement.parse('jedi>=0.10'))
